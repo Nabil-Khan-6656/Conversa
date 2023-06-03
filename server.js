@@ -53,8 +53,8 @@ const server = app.listen(Port, console.log(`Server Started on port ${Port}`))
 
 var io = require('socket.io')(server, {
   cors: {
-    origin: true,
-    credentials: true
+    origin: "https://conversa-test-git-main-nabil-khan-6656.vercel.app",
+    methods: ["GET", "POST"]
   }
 });
 
