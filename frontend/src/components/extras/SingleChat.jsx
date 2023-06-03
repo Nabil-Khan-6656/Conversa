@@ -15,7 +15,7 @@ import NotificationAudio from "../../audio/ding.mp3"
 import MessageSentAudio from "../../audio/message-sent.mp3"
 
 
-const ENDPOINT = "http://localhost:5000"
+const ENDPOINT = "https://test-chat-app-nine.vercel.app"
 
 
 
