@@ -51,13 +51,12 @@ app.use(errorHandler)
 
 const server = app.listen(Port, console.log(`Server Started on port ${Port}`))
 
-const io = require("socket.io")(server, {
-    pingTimeout: 60000,
-    cors: {
-      origin: "*",
-      // credentials: true,
-    },
-  });
+var io = require('socket.io')(server, {
+  cors: {
+    origin: true,
+    credentials: true
+  }
+});
 
 
 
